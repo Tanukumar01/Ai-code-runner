@@ -1,0 +1,40 @@
+{
+  "name": "ai-code-runner",
+  "displayName": "AI Code Runner",
+  "description": "Generate, refine, and run C/C++/JS code using AI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:ai-code-runner.generateCode"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ai-code-runner.generateCode",
+        "title": "AI Code Runner: Generate Code"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.99.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.23.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.12"
+  }
+}
