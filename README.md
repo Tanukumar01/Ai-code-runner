@@ -1,65 +1,36 @@
-# ai-code-runner README
+## 🧠 AI Code Runner — VS Code Extension
+A Visual Studio Code extension that lets you generate, refine, and run JavaScript, C, or C++ code using AI (powered by OpenRouter API). Just describe what you want the code to do — the extension takes care of the rest.
 
-This is the README for your extension "ai-code-runner". After writing up a brief description, we recommend including the following sections.
+## ✨ Features
+💬 Describe a coding task in plain English
 
-## Features
+🤖 AI generates the full code snippet
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+🛠️ Option to refine the code with feedback
 
-For example if there is an image subfolder under your extension project workspace:
+▶️ Run the code directly from the editor
 
-\!\[feature X\]\(images/feature-x.png\)
+🧪 Supports JavaScript, C, and C++
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## ⚙️ Setup
+Clone the repo and open it in VS Code.
 
-## Requirements
+Run npm install to install dependencies.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Press F5 to launch a development instance of VS Code.
 
-## Extension Settings
+Use the command palette (Ctrl+Shift+P) and select "AI Code Runner: Generate Code".
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Make sure you're in an open workspace folder to allow file creation and terminal usage.
 
-For example:
+Note: Requires an OpenRouter API key.
 
-This extension contributes the following settings:
+## 📦 Technologies Used
+Node.js
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+VS Code Extension API
 
-## Known Issues
+OpenRouter (ChatGPT-compatible AI API)
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+node-fetch for API requests
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
