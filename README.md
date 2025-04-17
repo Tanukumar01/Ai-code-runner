@@ -1,36 +1,95 @@
-## 🧠 AI Code Runner — VS Code Extension
-A Visual Studio Code extension that lets you generate, refine, and run JavaScript, C, or C++ code using AI (powered by OpenRouter API). Just describe what you want the code to do — the extension takes care of the rest.
+# 🧠 AI Code Runner
 
-## ✨ Features
-💬 Describe a coding task in plain English
+[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-blue?logo=visualstudiocode)](https://code.visualstudio.com/)
+[![Node.js](https://img.shields.io/badge/Node.js-Required-green?logo=node.js)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-🤖 AI generates the full code snippet
+> A Visual Studio Code extension to **generate, refine, and run JavaScript, C, or C++ code** using AI (powered by OpenRouter API).
 
-🛠️ Option to refine the code with feedback
+---
 
-▶️ Run the code directly from the editor
+## 🚀 Features
 
-🧪 Supports JavaScript, C, and C++
+- 💬 Describe what you want the AI to build
+- ⚙️ Choose your preferred programming language: JavaScript, C, or C++
+- 🤖 AI generates the code automatically
+- 🛠️ Give feedback to refine the code iteratively
+- ▶️ Instantly run the generated code in the terminal
 
-## ⚙️ Setup
-Clone the repo and open it in VS Code.
+---
 
-Run npm install to install dependencies.
+## 🧰 Requirements
 
-Press F5 to launch a development instance of VS Code.
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- An **OpenRouter API Key** for accessing AI generation
+- VS Code (v1.99.0 or newer)
 
-Use the command palette (Ctrl+Shift+P) and select "AI Code Runner: Generate Code".
+---
 
-Make sure you're in an open workspace folder to allow file creation and terminal usage.
+## 🛠️ Installation
 
-Note: Requires an OpenRouter API key.
+### 1. Clone the repo
 
-## 📦 Technologies Used
-Node.js
+```bash
+git clone https://github.com/your-username/ai-code-runner.git
+cd ai-code-runner
+```
 
-VS Code Extension API
+### 2. Install dependencies
 
-OpenRouter (ChatGPT-compatible AI API)
+```bash
+npm install
+```
 
-node-fetch for API requests
+### 3. Open in VS Code and launch extension
 
+- Press `F5` in VS Code to open a new Extension Development Host.
+- Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`) and run:  
+  **AI Code Runner: Generate Code**
+
+---
+
+## 🔑 Configure API Key
+
+Replace the placeholder key in `extension.js`:
+
+```js
+'Authorization': 'Bearer YOUR_API_KEY_HERE'
+```
+
+You can obtain a free API key from [OpenRouter.ai](https://openrouter.ai/).
+
+---
+
+## 🧪 Supported Languages
+
+- ✅ JavaScript (Node.js)
+- ✅ C (via GCC)
+- ✅ C++ (via g++)
+
+Make sure you have compilers like `gcc` and `g++` installed on your system to run C/C++ code.
+
+---
+
+## 📸 Screenshots
+
+> Coming soon — GIF showing code generation, refinement, and execution!
+
+---
+
+## 📄 License
+
+MIT © [Your Name](https://github.com/your-username)
+
+---
+
+## 🙌 Acknowledgements
+
+- [OpenRouter.ai](https://openrouter.ai/) — AI Code Generation
+- [VS Code Extension API](https://code.visualstudio.com/api)
+
+```
+
+---
+
+Let me know if you'd like me to personalize it with your name or GitHub link — or generate a logo/banner for it too!
